@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Web App</title>
+    <style>
+        body {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-image: linear-gradient(to right, #8e2de2, #4a00e0);;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000000;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 80%;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        
+        }
+
+        button {
+            background-image: linear-gradient(to right, #fc5c7d, #6a82fb);;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-image: linear-gradient(to right, #fc5c7d, #6a82fb);;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            background-color: #fff;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Todo List</h1>
+    <input type="text" id="newTask" placeholder="Enter a new task">
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+    <script src="todo.js"></script>
+
+</body>
+</html>
